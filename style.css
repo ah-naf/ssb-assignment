@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 15px 80px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    margin-left: auto;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+header h1 span {
+    color: royalblue;
+}
+
+.hero-text {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.hero-img {
+    height: 400px;
+    margin: 20px 0 50px;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.success-container .row {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+.col-1 {
+    text-align: right;
+}
+
+.col-2 {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.col-1 h2 {
+    color: salmon;
+    font-size: 40px;
+}
+
+.col-1 p {
+    max-width: 500px;
+    margin-left: auto;
+}
+
+.col-2 h1 {
+    max-width: 400px;
+}
+
+section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: 31%;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+}
+
+.card1 {
+    background-color: #FFB085;
+}
+
+.card2 {
+    background-color: #D3E4CD;
+}
+
+.card3 {
+    background-color: #F5E6CA;
+}
+
+.ham-menu {
+    display: none;
+}
+
+footer {
+    padding: 25px 0;
+    background-color: royalblue;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+}
+
+footer p span {
+    font-weight: 800;
+}
+
+@media screen and (max-width: 950px) {
+    .card-container {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .card {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .card h3 {
+        margin: 20px 0;
+    }
+    section {
+        margin-bottom: 50px;
+    }
+    nav {
+        padding: 15px 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .row {
+        flex-direction: column;
+    }
+    .col {
+        text-align: center;
+        margin: 0 !important;
+    }
+    .col-1 {
+        order: 2;
+    }
+    .col-2 {
+        order: 1;
+    }
+    .col h1,
+    .col p {
+        margin: auto;
+        max-width: fit-content;
+    }
+    ul {
+        display: none;
+    }
+    .ham-menu {
+        display: block;
+    }
+    nav {
+        justify-content: space-between;
+    }
+    nav .ham-menu {
+        font-size: 30px;
+    }
+    footer p {
+        font-size: 13px;
+    }
+    section {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 35px;
+    }
+}
